@@ -4,7 +4,7 @@ Touchscreen snake with swipe support for mobile devices
 ### Java
 
 
-var canvas = document.querySelector('canvas');
+### var canvas = document.querySelector('canvas');
 var ah = 100
 var aw = 50
 canvas.width = window.innerWidth - aw ;
