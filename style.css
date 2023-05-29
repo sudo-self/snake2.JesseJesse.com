@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, span {
+  padding-bottom: 0.714em !important;
+  padding-top: 0.714em !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer {
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  background: #1E1E24;
+  text-align: center;
+}
+footer .content {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 80px;
+}
+footer .content .bottom {
+  padding: 0;
+  margin: 0;
+  top: 10%;
+}
+footer .content .bottom .beat {
+  color: red;
+  -webkit-animation: beat 0.3s infinite alternate;
+          animation: beat 0.3s infinite alternate;
+}
+footer .content .top {
+  font-size: 25px;
+}
+footer .content .top .fa-twitter:hover {
+  transition: 350ms ease-in-out;
+  color: #55acee;
+  transform: scale(1.4);
+}
+footer .content .top .fa-youtube:hover {
+  transition: 350ms ease-in-out;
+  color: #cd201f;
+  transform: scale(1.4);
+}
+footer .content .top .fa-instagram:hover {
+  transition: 350ms ease-in-out;
+  color: #e4405f;
+  transform: scale(1.4);
+}
+footer .content .top .fa-codepen:hover {
+  transition: 350ms ease-in-out;
+  color: #FFDD40;
+  transform: scale(1.4);
+}
+footer .content .top a {
+  padding: 10px;
+}
+footer .content .top i {
+  transition: 500ms ease-in-out;
+}
+
+body {
+  background: #0c1a27;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+.noselect {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+canvas {
+  position: absolute;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 5px #FB9F89;
+}
+
+@-webkit-keyframes beat {
+  to {
+    transform: scale(1.4);
+  }
+}
+
+@keyframes beat {
+  to {
+    transform: scale(1.4);
+  }
+}
+.artboard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+}
+.artboard .display {
+  display: flex;
+  position: absolute;
+  top: 0;
+}
+.artboard .display h3 {
+  padding-left: 10px;
+}
